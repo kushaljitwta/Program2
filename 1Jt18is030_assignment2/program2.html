@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table{       
+        border: 3px solid;
+        background-color:lime;
+        margin: auto; 
+      }
+.blink{
+        margin:3px;
+        background-color:white;
+        padding: 5px;
+        text-align: center;
+        line-height:40px;
+    }
+    span{
+        font-size: 25px;
+        color: black;
+        animation: blink 1.0s linear infinite;
+    }
+@keyframes blink{
+                    0%{opacity: 0;}
+                    70%{opacity: .5;}
+                    100%{opacity: 1;}
+                }
+    </style>            
+
+    <title>Squares and Cubes</title>
+</head>
+    <body>
+        <table border="2" align="center">
+            <cursive>
+            <tr>
+            <td colspan="3"><center>Squares and Cubes</center></td>
+            </tr>
+            <tr>
+            <td>NUMBER</td>
+            <td>SQUARE</td>
+            <td>CUBES</td>
+            </tr>
+            <script type="text/javascript">
+                for(var i=100; i<=1000; i=i+100)
+                {
+                    document.write("<tr align='center'><td>" + i + "</td><td>" + i*i +"</td><td>" + i*i*i + "</td></tr>")
+                }
+            </script>
+        </table>
+    </cursive>
+     <center><h1= class="blink"><span>****   Challenge 2 accomplished    ****</span></h1></center>
+    </body>
+</html>
